@@ -12,7 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloSuvlet
  */
-@WebServlet("/hello")
+//@WebServlet("/hello")
+@WebServlet(urlPatterns = {"/hello","/world"})
 public class HelloSuvlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -23,6 +24,20 @@ public class HelloSuvlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		super.destroy();
+		System.out.println("Hello Server destroy 호출");
+	}
+
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		super.init();
+		System.out.println("Hello Server init 호출");
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -38,5 +53,5 @@ public class HelloSuvlet extends HttpServlet {
 		out.print("<body>");
 		out.print("<html>");
 	}
-
+	
 }
