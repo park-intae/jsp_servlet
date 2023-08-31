@@ -32,7 +32,8 @@
 			<h1>
 				<i class="fa-solid fa-right-to-break"></i>로그인
 			</h1>
-			<form action="login" method="post" class="form">
+			<!-- <form action="login" method="post" class="form"> -->
+				<form action="login.jsp" method="post" class="form">
 				<div class="form-group">
 					<label for="userid"> <i class="fa-solid fa-user"></i>아이디
 					</label> <input type="text" name="userid" class="form-control"

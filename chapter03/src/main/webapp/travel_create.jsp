@@ -29,7 +29,7 @@
 <body>
 	<div class="container">
 		<h1>관광지 등록</h1>
-		<form action="" method="post" class="form">
+		<form action="travel_add" method="post" class="form">
 			<div class="form-group">
 				<label for="title"> <i class="fa-regular fa-image"></i>명칭
 				</label> <input type="text" name="title" class="form-control"
