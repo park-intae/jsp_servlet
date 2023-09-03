@@ -1,6 +1,7 @@
-package org.galapaogs.ex1;
+package org.galapagos.ex1;
 
 import java.io.IOException;
+import java.sql.Connection;
 
 import javax.annotation.Resource;
 import javax.servlet.ServletException;
@@ -36,7 +37,7 @@ public class ConnectionTestServlet extends HttpServlet {
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		try(Conncetion conn = dataFactory.getConnection()){
+		try(Connection conn = dataFactory.getConnection()){
 			System.out.println("연결획득 성공");
 		}catch(Exception e) {
 			e.printStackTrace();

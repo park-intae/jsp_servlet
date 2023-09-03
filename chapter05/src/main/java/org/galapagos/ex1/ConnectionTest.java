@@ -1,4 +1,4 @@
-package org.galapaogs.ex1;
+package org.galapagos.ex1;
 
 public class ConnectionTest {
 
